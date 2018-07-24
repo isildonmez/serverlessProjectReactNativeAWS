@@ -13,32 +13,32 @@ class App extends Component {
   }
 
   async signUp() {
-    const { username, password, phone_number, email } = this.state
+    const { username, password, phone_number, email } = this.state;
     await Auth.signUp({
       username,
       password,
       attributes: { email, phone_number }
-    })
-    console.log('sign up successful!')
+    });
+    console.log('sign up successful!');
   }
 
   async confirmSignUp() {
-    const { username, authCode } = this.state
-    await Auth.confirmSignUp(username, authCode)
-    console.log('confirm sign up successful!')
+    const { username, authCode } = this.state;
+    await Auth.confirmSignUp(username, authCode);
+    console.log('confirm sign up successful!');
   }
 
   async signIn() {
-    const { username, password } = this.state
-    const user = await Auth.signIn(username, password)
-    this.setState({ user })
-    console.log('sign in sucessful')
+    const { username, password } = this.state;
+    const user = await Auth.signIn(username, password);
+    this.setState({ user });
+    console.log('sign in sucessful');
   }
 
   async confirmSignIn() {
-    const { user, authCode } = this.state
-    await Auth.confirmSignIn(user, authCode)
-    console.log('user now successfully signed in to the app!!')
+    const { user, authCode } = this.state;
+    await Auth.confirmSignIn(user, authCode);
+    console.log('user now successfully signed in to the app!!');
   }
 
   render() {
