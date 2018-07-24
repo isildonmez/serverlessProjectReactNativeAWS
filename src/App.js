@@ -12,6 +12,11 @@ class App extends Component {
     user: {}
   }
 
+  async componentDidMount() {
+    const data = await API.get('sampleCloudApi', '/items');
+    console.log('data: ', data);
+  }
+
   async signUp() {
     const { username, password, phone_number, email } = this.state;
     await Auth.signUp({

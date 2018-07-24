@@ -6,21 +6,34 @@ features:
         attributes:
           name: sampleCloudApi
           requires-signin: false
+          sdk-generation-stage-name: Development
         paths:
           /items: !com.amazonaws.mobilehub.v0.Function 
-            name: sampleLambda
-            codeFilename: uploads/sampleLambda.zip
-            handler: lambda.handler
+            codeFilename: uploads/sampleLambda-20180724162950.zip
+            description: 'Handler for calls to resource path : /items/{proxy+}'
             enableCORS: true
-            runtime: nodejs6.10
             environment: {}
+            handler: lambda.handler
+            hashcode: V/1zBh5WNLv6b1WO8r9zFpVFwah9fkNjesmVVfY8+G4=
+            memorySize: '128'
+            modified: '2018-07-24T15:30:57.443+0000'
+            name: sampleLambda
+            runtime: nodejs6.10
+            timeout: '3'
+            version: fzaad8wLbhRN58MeoQuf8M8MkVShyynx
           '/items/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
-            name: sampleLambda
-            codeFilename: uploads/sampleLambda.zip
-            handler: lambda.handler
+            codeFilename: uploads/sampleLambda-20180724162950.zip
+            description: 'Handler for calls to resource path : /items/{proxy+}'
             enableCORS: true
-            runtime: nodejs6.10
             environment: {}
+            handler: lambda.handler
+            hashcode: V/1zBh5WNLv6b1WO8r9zFpVFwah9fkNjesmVVfY8+G4=
+            memorySize: '128'
+            modified: '2018-07-24T15:30:57.443+0000'
+            name: sampleLambda
+            runtime: nodejs6.10
+            timeout: '3'
+            version: Xi66VfeM86ZOBv6wESf4tOtoMXPDEIuL
   content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
     attributes:
       enabled: true
