@@ -1,0 +1,1 @@
+Building fully serverless & backendless mobile applications with AWS Amplify & React Native that include features like authentication, analytics, storage. Please visit the [link](https://medium.com/react-native-training/building-serverless-mobile-applications-with-react-native-aws-740ecf719fce) to look at how to add features like a managed data layer, push notifications and more.
